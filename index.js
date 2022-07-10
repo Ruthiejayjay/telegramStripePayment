@@ -1,4 +1,4 @@
-import Telegraf  from "telegraf";
+import { Composer }  from "micro-bot";
 import { Buns } from "./product.js";
 import { Cake } from "./product.js";
 import { Pizza } from "./product.js";
@@ -6,7 +6,7 @@ import { Bread } from "./product.js";
 import { IceCream } from "./product.js";
 import { PanCakes } from "./product.js";
 import { Donut } from "./product.js";
-const bot = new Telegraf('5525122253:AAF4c0R1ENKwVLwhe7WRMeFwdLp_aDVDNdo');
+const bot = new Composer();
 
 
 
@@ -61,4 +61,5 @@ bot.on("successful_payment", async (ctx, next) => {
 })
 
 
-bot.launch();
+module.exports = bot
+//bot.launch();

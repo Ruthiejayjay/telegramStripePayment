@@ -6,12 +6,13 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "start": "micro-bot"
   },
   "author": "ruthiejayjay",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.27.2",
+    "micro-bot": "^2.5.3",
     "nodemon": "^1.19.4",
     "telegraf": "3.33"
   }
