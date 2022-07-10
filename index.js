@@ -1,5 +1,4 @@
-//import Telegraf  from "telegraf";
-import { Composer } from "micro-bot";
+import { Composer }  from "micro-bot";
 import { Buns } from "./product.js";
 import { Cake } from "./product.js";
 import { Pizza } from "./product.js";
@@ -63,5 +62,4 @@ bot.on("successful_payment", async (ctx, next) => {
 
 
 module.exports = bot
-
 //bot.launch();
